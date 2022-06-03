@@ -152,17 +152,11 @@ Node* prev(){
 }
 
 Node* first_node(){
-	if(size() > 0)
-		return _head->next;
-	else
-		return _tail;
+	return _head;
 }
 
 Node* last_node(){
-	if(size() > 0)
-		return _tail->prev;
-	else
-		return _tail;
+	return _tail;
 }
 
 Node* get_node(size_t index){
