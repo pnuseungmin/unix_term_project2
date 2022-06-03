@@ -161,9 +161,6 @@ Node* last_node(){
 
 Node* get_node(size_t index){
 	int count = 0;
-	if(size() - 1 < index)
-		return NULL;
-
 	Node *now = _head;
 	while(count != index){
 		now = now->next;
